@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hover.css">
+
+    <title>Laddu</title>
+  </head>
+  <body>
+    <header>
+    	<h1 class="logo">Laddu</h1>
+    </header>
+    
+    <section>
+    
+    	<h1 class="teletext"></h1>
+    	<section class="successMessage">
+            <div>
+                We'll be in touch.
+            </div>
+        </section>
+    	<!--    	<img src="assets/images/laddu-2.jpg" />-->
+    	<img src="assets/images/indian-sweet-motichoor_55610-938.jpg" />
+
+    	<footer>
+    		<a href="https://twitter.com/ideassembly" target="_blank" alt="twitter"><img src="twitter.png" /></a>
+    		<a href="https://www.facebook.com/The-assembly-296714310734857/" target="_blank" alt="facebook"><img src="facebook.svg" /></a>
+    	</footer>
+    </section>
+  </body>
+  <script src="assets/js/core.js"></script>
+  <script>
+      // typewriter effect
+        var element = document.querySelector('.teletext');
+        var typewriter = new Typewriter(element, {loop: true});
+
+        typewriter.changeDelay(26)
+            .typeString('Offer <em>joy and happiness</em> to another person, and it <em>reflects</em> back into <em>your own life</em>.')
+            .pauseFor(5000)
+            .deleteAll(5)
+            .pauseFor(1000)
+            .typeString('What we find <em>changes</em> who we <em>become</em>')
+            .pauseFor(5000)
+            .deleteAll(5)
+            .pauseFor(1000)
+            .typeString('Think not you can <em>direct</em> the course of love. For love, if it finds you worthy, <em>directs your course</em>')
+            .pauseFor(1000)
+            .start()
+    
+      // page-load events
+	  document.addEventListener('DOMContentLoaded', function(event){
+
+	  	// Join button click-handler. Adding .checked class, if a valid email was entered
+	  	document.querySelector('input[type=email]').addEventListener('keyup', function(event){
+	    	// regex for email validation
+	    	const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+	    	var email = document.querySelector('.inputContainer input[type=email]').value;
+
+	    	if( re.test( String(email).toLowerCase() ) ){
+	    		document.querySelector('.inputContainer').classList.add('checked');
+	    	}else{
+	    		document.querySelector('.inputContainer').classList.remove('checked');
+	    	}
+
+
+	  	})
+	  })
+  </script>
+</html>
