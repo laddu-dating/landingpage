@@ -38,6 +38,13 @@ header {
 	box-sizing: border-box;
 	height: 90px;
 	padding: 30px 50px;
+  background-color: white;
+}
+
+header > img {
+	height: 90px;
+    position: relative;
+    top: -30px;
 }
 
 body {
@@ -47,6 +54,10 @@ body {
 	left: 0;
 	right: 0;
 	margin: 0;
+/*    background-color: #ffc107;*/
+	background-color: #E8D35B;
+/*	background: linear-gradient(0deg, rgba(255,233,106,1) 0%, rgba(232,211,91,1) 95%, rgba(195,170,28,1) 100%) !important;*/
+
 }
 
 body > section {
@@ -62,7 +73,7 @@ body > section {
 body > section > h1 {
   font-family: 'IBM Plex Serif', serif !important;
   min-height: 230px;
-  color: #D8D8D9;
+  color: #fff;
   font-size: 3em;
   word-spacing: 0.2em;
   margin: 40px;
@@ -71,7 +82,8 @@ body > section > h1 {
 
 body > section > h1 em {
 	font-style: unset;
-	color: #606060;
+	color: #5270B0;
+/*	color: #606060;*/
 }
 
 @media (min-width: 900px) {
@@ -86,10 +98,16 @@ body > section > h1 em {
 	border-bottom: 1px solid #ddd;
 	padding: 5px 2px;
 	margin-left: 4px;
-	font-size: 0.8em;
+	font-size: 1.2em;
 	color: #444;
 	outline: 0;
 	min-width: 200px;
+	background-color: #E8D35B;
+	color: #5270B0;
+}
+
+.inputContainer > input::placeholder {
+	color: white;
 }
 
 .inputContainer > input:focus {
@@ -129,11 +147,16 @@ input[type=submit] {
 	color: #7b7b7b;
 */
 /*	cursor: pointer;*/
+	background-color: white;
+	border-color: white;
+	transition: 0.2s linear all;
 }
 
 input[type=submit]:hover {
-  background-color: #ffc107;
+/*  background-color: #ffc107;*/
+	background-color: #ffc107;
   border-color: #ffc107;
+	color: white;
 }
 
 footer > a {
