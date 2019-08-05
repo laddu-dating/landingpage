@@ -49,6 +49,44 @@ header > img {
 	transform: translateY(-50%);
 }
 
+header > .links-container{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: table-row;
+/*	margin-top: 32px;*/
+	
+}
+
+header > .links-container > a {
+	color: black;
+    padding: 0 16px;
+	padding-top: 30px;
+	font-weight: 400;
+	transition: 0.2s linear color;
+	display: block;
+	float: left;
+	height: 100%;
+	text-align: center;
+}
+
+header > .links-container > a:last-of-type {
+	color: white;
+	background-color: #ffc107;
+	z-index: 100;
+	transition: 0.2s linear background-color;
+}
+
+header > .links-container > a:last-of-type:hover {
+	color: white;
+	background-color: black;
+}
+
+header > .links-container > a:hover {
+	text-decoration: none;
+	color: #ffc107;
+}
 body {
 	position: absolute;
 	top: 0;
