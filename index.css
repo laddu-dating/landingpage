@@ -38,13 +38,15 @@ header {
 	box-sizing: border-box;
 	height: 90px;
 	padding: 30px 50px;
-  background-color: white;
+  	background-color: white;
+	position: relative;
 }
 
 header > img {
-	height: 90px;
+	height: 60px;
     position: relative;
-    top: -30px;
+    top: 50%;
+	transform: translateY(-50%);
 }
 
 body {
