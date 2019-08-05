@@ -55,7 +55,7 @@ body {
 	right: 0;
 	margin: 0;
 /*    background-color: #ffc107;*/
-	background-color: #E8D35B;
+	background-color: #ffc107;
 /*	background: linear-gradient(0deg, rgba(255,233,106,1) 0%, rgba(232,211,91,1) 95%, rgba(195,170,28,1) 100%) !important;*/
 
 }
@@ -102,7 +102,7 @@ body > section > h1 em {
 	color: #444;
 	outline: 0;
 	min-width: 200px;
-	background-color: #E8D35B;
+	background-color: #ffc107;
 	color: #5270B0;
 }
 
@@ -166,10 +166,10 @@ footer > a {
 
 footer img {
 	width: 20px;
-	-webkit-filter: grayscale(1);
-	-webkit-filter: grayscale(100%);
-	filter: gray;
-	filter: grayscale(100%);
+/*	-webkit-filter: grayscale(1);*/
+/*	-webkit-filter: grayscale(100%);*/
+/*	filter: gray;*/
+/*	filter: grayscale(100%);*/
 	transition: 0.2s linear filter;
 }
 
